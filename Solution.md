@@ -34,7 +34,7 @@ CMD pgcli
 ### результат 
 ![https://raw.githubusercontent.com/TaanTV/TaanTV-test-task/main/id%20images.jpg](https://raw.githubusercontent.com/TaanTV/TaanTV-test-task/main/id%20images.jpg)
 
-### при многочисленных попытках внутри контейнера подменить UID и GID приходит к такому выводу:
+### при многочисленных попытках внутри контейнера подменить UID и GID приводят к такому выводу:
 
 ![https://raw.githubusercontent.com/TaanTV/TaanTV-test-task/main/user%20node%20is%20currently%20used%20by%20process%201.jpg](https://raw.githubusercontent.com/TaanTV/TaanTV-test-task/main/user%20node%20is%20currently%20used%20by%20process%201.jpg)
 
