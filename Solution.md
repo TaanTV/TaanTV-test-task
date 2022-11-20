@@ -31,7 +31,12 @@ USER ${USER}
 CMD pgcli
 ````
 
-### результат
+### результат 
+![https://raw.githubusercontent.com/TaanTV/TaanTV-test-task/main/id%20images.jpg](https://raw.githubusercontent.com/TaanTV/TaanTV-test-task/main/id%20images.jpg)
 
-![]
+### при многочисленных попытках внутри контейнера подменить UID и GID приходит к такому выводу:
+
+![https://raw.githubusercontent.com/TaanTV/TaanTV-test-task/main/user%20node%20is%20currently%20used%20by%20process%201.jpg](https://raw.githubusercontent.com/TaanTV/TaanTV-test-task/main/user%20node%20is%20currently%20used%20by%20process%201.jpg)
+
+### Контейнер - это процесс. Процесс запущен пользователем. Подменить можно написав форкающееся приложение, чтоб родительский процесс всегда работал от рута, и форкал дочерний процесс, который будет дропать себе полномочия до модного-актуального user_id. Но лучшей практикой будет перезапустить процессы, этот вариант требует консультации с руководителем.
 
